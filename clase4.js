@@ -1,9 +1,11 @@
 let CantidadProducto = parseInt(prompt("Ingrese la cantidad del producto"))
 const PrecioProducto = 50;
 
-for (let i = 1; i<=1;i++){
-  productos(CantidadProducto, PrecioProducto);
+while(CantidadProducto != 0)
 
+{
+  productos(CantidadProducto, PrecioProducto);
+  CantidadProducto = parseInt(prompt("Ingrese la cantidad del producto"));
 }
 
 function productos() {
