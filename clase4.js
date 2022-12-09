@@ -1,12 +1,15 @@
 let CantidadProducto = parseInt(prompt("Ingrese la cantidad del producto"))
 const PrecioProducto = 50;
 
-while(CantidadProducto != 0)
+
+while(CantidadProducto != "0" ) 
 
 {
   productos(CantidadProducto, PrecioProducto);
-  CantidadProducto = parseInt(prompt("Ingrese la cantidad del producto"));
+  CantidadProducto = prompt("Ingrese la cantidad del producto");
 }
+
+
 
 function productos() {
   Compra = CantidadProducto * PrecioProducto;
@@ -18,3 +21,5 @@ function productos() {
     console.log("el total de su compra es" + " " + Compra);
   }
 }
+
+console.log(CantidadProducto);
